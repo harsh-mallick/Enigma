@@ -117,7 +117,7 @@ const Product = () => {
                         <div className="rating-cs"><FaStar /><FaStar /><FaStar /><FaStar /><IoStarHalfOutline /> 4.6/5.0</div>
                         <div className="price-cs">₹1250</div>
                         <div className="desc-cs">
-                            Enigma is the modern version of a mystery game, turned into an immersive adventure. The players play unique character characters with special skills, investigate richly detailed 3D environments, and piece together clues to crack the ultimate case. This exciting new take on Cluedo brings suspense and strategy to life, transforming the classic game into an immersive, interactive mystery. With unique skills for each character, 3D environments, and evolving plot twists, players get to dive deep into their roles, uncover clues, and interrogate suspects like never before.
+                            The video showcases the 3D model of the Enigma board game. The board features detailed rooms, each with various objects, weapons, and clues scattered throughout. Different areas of the board, like hidden compartments and restricted zones, are clearly visible, showing the mystery elements of the game. The pieces representing suspects, weapons, and crime scenes are displayed, ready to be interacted with. As the video progresses, the board highlights key areas where clues can be found, building suspense and intrigue. The video ends by showing the complete layout, emphasizing the game&apos;s immersive and strategic design.
                         </div>
                         <AlertDialog>
                             <AlertDialogTrigger asChild>
