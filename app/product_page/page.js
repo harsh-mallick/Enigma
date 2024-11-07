@@ -104,9 +104,7 @@ const Product = () => {
             setbuttondisabled(true)
         }
     }, [user_reg])
-    window.document.onload(() => {
-        window.alert("To buy aur product login to the website")
-    })
+
     return (
         <div className='h-screen'>
             <div className='main-cs'>

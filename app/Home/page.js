@@ -70,6 +70,10 @@ const AboutPage = () => {
         </div>
     )
 }
+window.onload = () => {
+    window.alert("To buy aur product login to the website")
+}
+
 const page = () => {
     return (
         <div>
