@@ -23,6 +23,10 @@ body {
   filter: brightness(150%);
 }
 
+.resolution {
+  filter: contrast(120%) brightness(110%);
+}
+
 .bottom {
   background: url("./bg.jpg");
   background-repeat: no-repeat;

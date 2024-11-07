@@ -74,10 +74,10 @@ const changes = [
 const page = () => {
     return (
         <div>
-            <Image src={bg} width={0} height={0} sizes='100vw' alt="bg" style={{ width: "100%" }} />
+            <Image src={bg} width={0} height={0} sizes='100vw' alt="bg" style={{ width: "100%" }} className='resolution' />
             <div className="bottom">
-                <p className='text-red-700 font-bold text-2xl tracking-widest'>Meet the detectives</p>
-                <p className='text-red-700 text-lg'>Each character brings unique skills to help you solve the mystery. Choose wisely, as their abilities could be the key to cracking the case!</p>
+                <p className='text-white font-bold text-2xl tracking-widest'>Meet the detectives</p>
+                <p className='text-white text-lg'>Each character brings unique skills to help you solve the mystery. Choose wisely, as their abilities could be the key to cracking the case!</p>
                 <div className='flex ml-[150px]'>
                     {Array.isArray(detectives) && detectives.map((data) => {
                         console.log(data.name)
@@ -97,8 +97,8 @@ const page = () => {
                         )
                     })}
                 </div>
-                <p className='text-red-700 font-bold text-2xl tracking-widest mt-3'>Newest Additions</p>
-                <p className='text-red-700 text-lg'>Each character brings unique skills to help you solve the mystery. Choose wisely, as their abilities could be the key to cracking the case!</p>
+                <p className='text-white font-bold text-2xl tracking-widest mt-3'>Newest Additions</p>
+                <p className='text-white text-lg'>Each character brings unique skills to help you solve the mystery. Choose wisely, as their abilities could be the key to cracking the case!</p>
                 <div className='flex ml-[150px]'>
                     {Array.isArray(changes) && changes.map((datas) => {
                         return (

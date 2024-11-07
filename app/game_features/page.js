@@ -7,9 +7,9 @@ import features from '../new_features.png'
 const page = () => {
     return (
         <div>
-            <Image src={bg} width={0} height={0} sizes='100vw' alt="bg" style={{ width: "100%" }} />
+            <Image src={bg} width={0} height={0} alt="bg" style={{ width: "100%", height: "100%" }} className='resolution' />
             <div className='flex'>
-                <div className='left pl-4'>
+                <div className='left pl-4 resolution'>
                     <div className='left_bg'>
                         <p className='text-red-700 text-3xl font-bold ml-10'>What’s New?</p>
                         <p className='text-white text-xl tracking-wide mt-7 ml-10'>This exciting new take on Cluedo brings suspense and strategy<br />
@@ -26,7 +26,7 @@ const page = () => {
                     </div>
                 </div>
                 <div className='right text-center p-2 pl-16 bg-black'>
-                    <Image src={features} width={480} height={480} alt="Feautres Image" className='text-center rounded-2xl' />
+                    <Image src={features} width={480} height={480} alt="Feautres Image" className='text-center rounded-2xl resolution' style={{ imageResolution: "crisp-edges" }} />
                 </div>
             </div>
         </div>

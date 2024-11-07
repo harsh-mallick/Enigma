@@ -38,7 +38,7 @@ const HomePage = () => {
                     </div>
                 </div>
                 <div className='w-1/2 pt-28 pb-6 flex justify-center align-middle h-3/4 z-10'>
-                    <Image width={370} height={150} src={logo} alt="Logo of the website" className='rounded-3xl box-shadow' />
+                    <Image width={370} height={150} src={logo} alt="Logo of the website" className='rounded-3xl box-shadow' style={{ filter: "contrast(1.1) brightness(1.1)" }} />
                 </div>
 
             </div>
@@ -64,7 +64,7 @@ const AboutPage = () => {
                 </div>
             </div>
             <div className='p-10 text-center'>
-                <Image src={Cluedo} width={600} height={600} alt='Cluedo Image' className='mt-24 ml-5 zoom'></Image>
+                <Image src={Cluedo} width={600} height={600} alt='Cluedo Image' className='mt-24 ml-5 zoom' style={{ filter: "contrast(1.1) brightness(1.05)" }}></Image>
                 <p className='text-white font-bold text-lg'>Revamping the traditional game of Cluedo (hover the image to zoom)</p>
             </div>
         </div>
