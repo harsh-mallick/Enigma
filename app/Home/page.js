@@ -8,8 +8,20 @@ import "../global.css"
 import { FaArrowRight } from "react-icons/fa";
 import Cluedo from "../cluedo.png"
 import { useRouter } from 'next/navigation'
+import { useEffect, useState } from 'react';
 const HomePage = () => {
     const router = useRouter()
+    const [isPrompted, setisPrompted] = useState(false)
+    useEffect(() => {
+        // Show the prompt once the component has mounted (client-side only)
+        if (isPrompted === false) {
+            alert("To buy our Product Login to the website")
+            setisPrompted(true)
+        } else {
+
+        }
+    }, []);
+
     return (
         <div className='h-screen w-screen'>
             <video autoPlay loop muted playsInline className='absolute z-[0] h-screen object-cover w-full'>
@@ -69,9 +81,6 @@ const AboutPage = () => {
             </div>
         </div>
     )
-}
-window.onload = () => {
-    window.alert("To buy aur product login to the website")
 }
 
 const page = () => {
