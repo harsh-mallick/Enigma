@@ -23,7 +23,7 @@ const HomePage = () => {
     }, []);
 
     return (
-        <div className='h-screen w-screen'>
+        <div className='sm:h-screen h-auto w-screen'>
             <video autoPlay loop muted playsInline className='absolute z-[0] h-screen object-cover w-full'>
                 <source src="../video.mp4" className='w-full object-cover' />
             </video>
@@ -49,7 +49,7 @@ const HomePage = () => {
 
                     </div>
                 </div>
-                <div className='sm:w-1/2 pt-28 pb-6 flex justify-center align-middle h-3/4 z-10'>
+                <div className='sm:w-1/2 pt-28 pb-6 flex justify-center align-middle sm:h-3/4 h-auto z-10'>
                     <Image width={0} height={0} src={logo} alt="Logo of the website" className='rounded-3xl box-shadow sm:w-[370px] sm:h-[350px] w-[250px] h-[250px]' style={{ filter: "contrast(1.1) brightness(1.1)" }} />
                 </div>
 
