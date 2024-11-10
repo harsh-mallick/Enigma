@@ -12,15 +12,15 @@ import { useEffect, useState } from 'react';
 const HomePage = () => {
     const router = useRouter()
     const [isPrompted, setisPrompted] = useState(false)
-    // useEffect(() => {
-    //     // Show the prompt once the component has mounted (client-side only)
-    //     if (isPrompted === false) {
-    //         alert("To buy our Product Login to the website")
-    //         setisPrompted(true)
-    //     } else {
+    useEffect(() => {
+        // Show the prompt once the component has mounted (client-side only)
+        if (isPrompted === false) {
+            alert("To buy our Product Login to the website")
+            setisPrompted(true)
+        } else {
 
-    //     }
-    // }, []);
+        }
+    }, []);
 
     return (
         <div className='h-screen w-screen'>
