@@ -73,16 +73,16 @@ const changes = [
 ]
 const page = () => {
     return (
-        <div>
+        <div className='h-auto'>
             <Image src={bg} width={0} height={0} sizes='100vw' alt="bg" style={{ width: "100%" }} className='resolution' />
-            <div className="bottom">
+            <div className="bottom h-auto">
                 <p className='text-white font-bold text-2xl tracking-widest'>Meet the detectives</p>
                 <p className='text-white text-lg'>Each character brings unique skills to help you solve the mystery. Choose wisely, as their abilities could be the key to cracking the case!</p>
-                <div className='flex ml-[150px]'>
+                <div className='sm:flex sm:flex-row flex-col w-full justify-center items-center'>
                     {Array.isArray(detectives) && detectives.map((data) => {
                         console.log(data.name)
                         return (
-                            <div key={data.id} className='hover:scale-110'>
+                            <div key={data.id} className='hover:scale-110 flex justify-center'>
                                 <Card >
                                     <CardHeader>
                                         <CardTitle img_prop={`${data.image}`}>Card Title</CardTitle>
@@ -99,10 +99,10 @@ const page = () => {
                 </div>
                 <p className='text-white font-bold text-2xl tracking-widest mt-3'>Newest Additions</p>
                 <p className='text-white text-lg'>Each character brings unique skills to help you solve the mystery. Choose wisely, as their abilities could be the key to cracking the case!</p>
-                <div className='flex ml-[150px]'>
+                <div className='sm:flex sm:flex-row flex-col w-full justify-center items-center'>
                     {Array.isArray(changes) && changes.map((datas) => {
                         return (
-                            <div key={datas.id} className='hover:scale-110 transition-all delay-300 ease-in-out'>
+                            <div key={datas.id} className='hover:scale-110 transition-all delay-300 ease-in-out flex justify-center'>
                                 <Card>
                                     <CardHeader>
                                         <CardTitle img_prop={datas.image}>Card Title</CardTitle>

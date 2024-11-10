@@ -23,7 +23,7 @@ const HomePage = () => {
     }, []);
 
     return (
-        <div className='sm:h-screen h-auto w-screen'>
+        <div className='sm:h-screen h-auto w-screen relative'>
             <video autoPlay loop muted playsInline className='absolute z-[0] h-screen object-cover w-full'>
                 <source src="../video.mp4" className='w-full object-cover' />
             </video>

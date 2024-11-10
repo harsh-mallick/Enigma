@@ -31,7 +31,6 @@ body {
   background: url("./bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 890px;
   padding: 16px;
 }
 
@@ -46,14 +45,10 @@ body {
   background-image: url('image2.png');
   background-repeat: no-repeat;
   background-size: cover;
-  width: 60%;
-  height: 500px;
+  height: auto;
   padding: 2rem;
 }
 
-.right {
-  width: 40%;
-}
 
 .left_bg {
   background: rgba(128, 128, 128, 0.322);

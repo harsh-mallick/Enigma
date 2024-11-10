@@ -47,9 +47,18 @@ const Navbar = () => {
                 <li className='block cursor-pointer text-center' onClick={() => router.push('/')}>Home</li>
                 <li className='block cursor-pointer text-center' onClick={() => router.push('/#about')}>About</li>
                 <li className='block cursor-pointer text-center' onClick={() => router.push('/game_features')}>Game Features</li>
-                <li className='block cursor-pointer text-center' onClick={() => router.push('')}>Character Profile</li>
+                <li className='block cursor-pointer text-center' onClick={() => router.push('/character_profile')}>Character Profile</li>
                 <li className='block cursor-pointer text-center' onClick={() => router.push('/game_rules')}>Rules to Play</li>
-                <li className='block cursor-pointer text-center' onClick={() => router.push('')}>Contact Us</li>
+                <li className='block cursor-pointer text-center' onClick={() => router.push('/#contactus')}>Contact Us</li>
+                <div className='block cursor-pointer text-center'>
+                    <SignedOut>
+                        <SignInButton />
+                    </SignedOut>
+                </div>
+                <SignedIn>
+                    <li className='hidden text-white sm:block pr-8 cursor-pointer hover:text-gray-300' onClick={() => router.push('/product_page')}>Buy Our Product</li>
+                    <UserButton />
+                </SignedIn>
             </div>
         </>
     )
