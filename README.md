@@ -1,4 +1,4 @@
-![Logo](https://i.ibb.co/mDGLVJt/Enigma-logo-final-removebg-preview.png)
+![Logo](https://i.postimg.cc/zB9jzv9n/image.png)
 
 # ENIGMA
 
